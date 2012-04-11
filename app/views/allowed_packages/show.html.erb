@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Client:</b>
+  <%= @allowed_package.client_id %>
+</p>
+
+<p>
+  <b>Package:</b>
+  <%= @allowed_package.package_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_allowed_package_path(@allowed_package) %> |
+<%= link_to 'Back', allowed_packages_path %>

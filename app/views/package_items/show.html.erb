@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Package:</b>
+  <%= @package_item.package_id %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @package_item.state %>
+</p>
+
+<p>
+  <b>Agreement:</b>
+  <%= @package_item.agreement_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_package_item_path(@package_item) %> |
+<%= link_to 'Back', package_items_path %>

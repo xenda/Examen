@@ -1,0 +1,26 @@
+<%= simple_form_for(@package_item) do |f| %>
+  <% if @package_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@package_item.errors.count, "error") %> prohibited this package_item from being saved:</h2>
+
+      <ul>
+      <% @package_item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.association :package, :label => "Tipo", :label_method => "kind" %>
+  </div>
+  <div class="field">
+    <%= f.input :state, :collection => PackageItem::STATES %>
+  </div>
+  <div class="field">
+    <%= f.association :state %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

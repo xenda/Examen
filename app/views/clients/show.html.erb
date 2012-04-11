@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @client.name %>
+</p>
+
+<p>
+  <b>Max allowed packages:</b>
+  <%= @client.max_allowed_packages %>
+</p>
+
+<p>
+  <b>Allowed packages kind:</b>
+  <%= @client.allowed_packages_kind %>
+</p>
+
+<p>
+  <b>Pickup address:</b>
+  <%= @client.pickup_address %>
+</p>
+
+<p>
+  <b>Delivery address:</b>
+  <%= @client.delivery_address %>
+</p>
+
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>

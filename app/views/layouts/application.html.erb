@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Examen</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><%= link_to "Clientes", clients_path %></li>
+    <li><%= link_to "Tipos de Paquetes", packages_path %></li>
+    <li><%= link_to "Paquetes", package_items_path %></li>
+    <li><%= link_to "Contratos", agreements_path %></li>
+  </ul>
+</nav>
+<%= yield %>
+
+</body>
+</html>

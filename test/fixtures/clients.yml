@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  max_allowed_packages: 1
+  allowed_packages_kind: MyString
+  pickup_address: MyText
+  delivery_address: MyText
+
+two:
+  name: MyString
+  max_allowed_packages: 1
+  allowed_packages_kind: MyString
+  pickup_address: MyText
+  delivery_address: MyText

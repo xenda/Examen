@@ -1,0 +1,37 @@
+<%= simple_form_for(@agreement) do |f| %>
+  <% if @agreement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@agreement.errors.count, "error") %> prohibited this agreement from being saved:</h2>
+
+      <ul>
+      <% @agreement.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.association :client %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :starting_at %><br />
+    <%= f.datetime_select :starting_at %>
+  </div>
+  <div class="field">
+    <%= f.label :ending_at %><br />
+    <%= f.datetime_select :ending_at %>
+  </div>
+  <div class="field">
+    <%= f.association :package, :label => "Kind", :label_method => "kind" %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br />
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

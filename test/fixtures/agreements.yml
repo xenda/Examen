@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  starting_at: 2012-04-11 07:49:30
+  ending_at: 2012-04-11 07:49:30
+  kind: MyString
+  quantity: 1
+
+two:
+  starting_at: 2012-04-11 07:49:30
+  ending_at: 2012-04-11 07:49:30
+  kind: MyString
+  quantity: 1

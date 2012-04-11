@@ -1,0 +1,27 @@
+<h1>Listing package_items</h1>
+
+<table>
+  <tr>
+    <th>Package</th>
+    <th>State</th>
+    <th>Agreement</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @package_items.each do |package_item| %>
+  <tr>
+    <td><%= package_item.package_id %></td>
+    <td><%= package_item.state %></td>
+    <td><%= package_item.agreement_id %></td>
+    <td><%= link_to 'Show', package_item %></td>
+    <td><%= link_to 'Edit', edit_package_item_path(package_item) %></td>
+    <td><%= link_to 'Destroy', package_item, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Package item', new_package_item_path %>

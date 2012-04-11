@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  package_id: 1
+  state: MyString
+  agreement_id: 1
+
+two:
+  package_id: 1
+  state: MyString
+  agreement_id: 1
